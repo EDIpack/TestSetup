@@ -35,6 +35,7 @@ runs:
     - run: |
         brew reinstall gcc
         brew install openmpi
+        brew install pkg-config
       if: ${{ runner.os == 'macOS' }}
       shell: bash
 
