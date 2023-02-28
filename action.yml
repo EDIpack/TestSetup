@@ -15,7 +15,7 @@ runs:
 # openmpi_4_linux
     - run: |
         sudo apt-get install -y gfortran
-        sudo apt-get install -y openmpi-bin
+        sudo apt-get install -y libopenmpi-dev libopenmpi3 openmpi-bin openmpi-common openmpi-doc
       if: ${{ runner.os == 'Linux' }}
       shell: bash
       
