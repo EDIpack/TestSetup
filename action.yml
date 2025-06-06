@@ -33,7 +33,6 @@ runs:
 #MacOS
 # openmpi_4_macos
     - run: |
-#gcc 15 seems to have an issue in gfortran... 
         brew reinstall gcc@14 
         brew install openmpi
         brew install pkg-config
