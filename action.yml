@@ -33,7 +33,8 @@ runs:
 #MacOS
 # openmpi_4_macos
     - run: |
-        brew reinstall gcc
+#gcc 15 seems to have an issue in gfortran... 
+        brew reinstall gcc@14 
         brew install openmpi
         brew install pkg-config
       if: ${{ runner.os == 'macOS' }}
