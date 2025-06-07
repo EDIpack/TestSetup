@@ -1,5 +1,5 @@
-name: 'QcmPlab setup action'
-description: 'This is meant to be an OS & package independent action that contains the initial setup for the CI/CD workflows employed in QcmPlab repositories'
+name: 'EDIpack setup action'
+description: 'This is meant to be an OS & package independent action that contains the initial setup for the CI/CD workflows employed in EDIpack repositories'
 
 inputs:
   pack-type: 
