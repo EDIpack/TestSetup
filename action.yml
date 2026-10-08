@@ -11,9 +11,10 @@ runs:
   using: "composite" 
   steps:
 
-#Linux
+# Linux
 # openmpi_4_linux
     - run: |
+        sudo apt-get update
         sudo apt-get install -y gfortran
         sudo apt-get install -y libopenmpi-dev openmpi-bin openmpi-common
       if: ${{ runner.os == 'Linux' }}
